@@ -1,0 +1,1 @@
+function e(e=`img[data-preload], [data-preload] img`){let t=()=>document.querySelectorAll(e).forEach(e=>{e.loading=`eager`,e.decode?.().catch(()=>{})});`requestIdleCallback`in window?requestIdleCallback(t,{timeout:2500}):setTimeout(t,1200)}export{e as t};
